@@ -7,5 +7,9 @@ class RoundTests(unittest2.TestCase):
 
   @testGenerator
   def test_rounding(self):
-    for x in [(1,1), (1.9, 2), (9, 8), (1.6, 2), (1.4, 1)]:
+    for x in [(1,1),
+              (1.9, 2),
+              # (9, 8),
+              (1.6, 2),
+              (1.4, 1)]:
       yield self._foo, x
